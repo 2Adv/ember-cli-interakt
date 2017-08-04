@@ -1,27 +1,22 @@
-# ember-cli-interakt
+# ember-cli-intercom
 
-This README outlines the details of collaborating on this Ember addon.
+Easily add interakt to your app.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-interakt`
-* `npm install`
-* `bower install`
+```bash
+# From within your ember-cli project
+ember install ember-cli-interakt
+```
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+First you'll need to configure your Intercom App ID:
 
-## Running Tests
+```javascript
+// config/environment.js
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+ENV['ember-cli-interakt'] = {
+  appId: '[YOUR_APP_ID]'
+};
+```

@@ -4,6 +4,9 @@
 module.exports = {
   name: 'ember-cli-interakt',
   
+  isDevelopingAddon() {
+    return false;
+  },
   contentFor: function(type, config) {
    let appId = config['ember-cli-interakt'].appId;
     if (type === 'head') {
